@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1 user-scalable=no, shrink-to-fit=no">
+        <title>Personal Website With html And css</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWZCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDr02Emgwccf2pJqxct9ehpZG+MTW==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://kit.fontawesome.com/9631b326a6.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    </head>
+    <body>
+        <section class="hero">
+            <div class="main-width">
+                <header>
+                    <div class="logo">
+                        <!-- <b class="fa-solid">K P</b> -->
+                        <div class="navbar-brand">
+                            <b class="fa-solid">
+                                <a class="navbar-brand" href="index.html">
+                                    <img src="k.jpg" style="width:55px; height:55px"/>
+                                </a>
+                            </b>
+                        </div>
+                    </div>
+                    <nav>
+                        <div class="hamb">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <ul class="nav-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#aboutme">About me</a></li>
+                            <li><a href="#workexperience">Work Experience</a></li>
+                            <li><a href="#photos">Photos</a></li>
+                            <li class="btn"><a href="#contacts">Contact Me</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+             <div class="container">
+                        <div class="hero-text">
+                            <h3>Hi, There!</h3>
+                            <!-- <h1>I am <span>Krishna(Harshal) Parab.</span></h1> -->
+                            <h1>I am <span class="input"></span></h1>
+                                <p>Welcome, to my website.</p>
+                            <div class="social">
+                                <a href="https://www.linkedin.com/in/krushna-parab-04a831168" class="tooltip" data-toggle="tooltip"><i class="fa-brands fa-linkedin"><span class="tooltiptext">Linkedin</span></i></a>
+                                <a href="https://www.instagram.com/harshalparab10/" class="tooltip" data-toggle="tooltip"><i class="fa-brands fa-instagram"><span class="tooltiptext">Instagram</span></i></a>
+                                <a href="https://www.facebook.com/harshal.parab.52" class="tooltip" data-toggle="tooltip"><i class="fa-brands fa-facebook"><span class="tooltiptext">Facebook</span></i></a>
+                                <!-- <a href="#" class="tooltip" data-toggle="tooltip" title="+91 98704 24789"><i class="fa-solid fa-phone"></i></a> -->
+                                <a href="tel:9930119672" class="tooltip" data-toggle="tooltip"><i class="fa-solid fa-phone"><span class="tooltiptext">+919870424789</span></i></a>
+                                <a href="mailto:krushnaparab98@gmail.com" class="tooltip" data-toggle="tooltip"><i class="fa-solid fa-envelope"><span class="tooltiptext">krushnaparab98@gmail.com</span></i></a>
+                            </div>
+                            <button type="button"><a href="Resume.pdf" download="Resume">Download my CV</a></button>
+                        </div>
+                    </div>
+            </div>
+        </section>
+         <script type="text/javascript">
+            var typed = new Typed(".input", {
+                strings:["Krishna(Harshal) Parab.", "Testing engineer." ,"Web developer." ,"Calisthenics trainer."],
+                typeSpeed: 70,
+                backSpeed: 60,
+                loop:true
+            });
+        </script>
+         <script type="text/javascript">
+            var hamburger = document.querySelector(".hamb");
+            var navlist = document.querySelector(".nav-list");
+            var links =  document.querySelector(".nav-list li");
+
+            hamburger.addEventListener("click", function(){
+                this.classList.toggle("click");
+                navlist.classList.toggle("open");
+            });
+        </script>
+    </body>
+</html>
