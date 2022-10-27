@@ -54,7 +54,7 @@
                                 <a href="https://www.instagram.com/harshalparab10/" class="tooltip" data-toggle="tooltip"><i class="fa-brands fa-instagram"><span class="tooltiptext">Instagram</span></i></a>
                                 <a href="https://www.facebook.com/harshal.parab.52" class="tooltip" data-toggle="tooltip"><i class="fa-brands fa-facebook"><span class="tooltiptext">Facebook</span></i></a>
                                 <!-- <a href="#" class="tooltip" data-toggle="tooltip" title="+91 98704 24789"><i class="fa-solid fa-phone"></i></a> -->
-                                <a href="tel:9930119672" class="tooltip" data-toggle="tooltip"><i class="fa-solid fa-phone"><span class="tooltiptext">+919870424789</span></i></a>
+                                <a href="tel:9870424789" class="tooltip" data-toggle="tooltip"><i class="fa-solid fa-phone"><span class="tooltiptext">+919870424789</span></i></a>
                                 <a href="mailto:krushnaparab98@gmail.com" class="tooltip" data-toggle="tooltip"><i class="fa-solid fa-envelope"><span class="tooltiptext">krushnaparab98@gmail.com</span></i></a>
                             </div>
                             <button type="button"><a href="Resume.pdf" download="Resume">Download my CV</a></button>
@@ -62,6 +62,94 @@
                     </div>
             </div>
         </section>
+         <section class="about" id="aboutme">
+                <div class="about-mains">
+                    <img src="harshal.jpeg">
+                    <div class="about-text">
+                        <h2>About me</h2>
+                        <h5>Developer,Designer <span>& Tester</span></h5>
+                        <p>Hello everyone,Thank you for visiting my webpage.</br>My self Krishna Parab.I'm 24 years old.Who is a passionate Python developer and a Technology lover.I completed my graduation in BSC Computer science from Mumbai university.Currently I'm working in Finacial software and system Pvt. Ltd.(FSS) company as a Sr. Test Engineer.If you want to know more about me, you can simply contact me using different social media platforms.</p>
+                    </div>
+                </div>
+         </section>
+         <section class="experience" id="workexperience">
+                <div class="experience-mains">
+                    <div class="slider">
+                        <div class="slides">
+                            <input type="radio" name="radio-btn" id="radio1">
+                            <input type="radio" name="radio-btn" id="radio2">
+                            <div class ="slide first">
+                                <img src="certificate.jpg">
+                            </div>
+                            <div class ="slide second">
+                                <img src="medal.jpeg">
+                            </div>
+                            <div class="navigation-auto">
+                                <div class="auto-btn1"></div>
+                                <div class="auto-btn2"></div>
+                            </div>
+                        </div>
+                        <div class="navigation-manual">
+                            <label for="radio1" class="manual-btn"></label>
+                            <label for="radio2" class="manual-btn"></label>
+                        </div>
+                    </div>
+                    <div class="experience-text">
+                        <h2>Work experience</h2>
+                        <h5>Financial Software & systems <span>- Sr. Test engineer</span></h5>
+                        <p>Creating test cases,scenarios for SIT & UAT testing.Creates shell & python scripts as per the requirement.Perform and review the testcases and project plans.Here I'm working with agile methodology like Requirement gatherings,designing,developing,testing,deployment.</p>
+                        </br>
+                        <h5>Lumina Datamatics <span>- Associate</span></h5>
+                        <p>Developed and modified HTML web pages as per the client requirement.Participated in multiple projects and also achieved my daily targets.Resolved the bugs individually,verified the data and assisted  other teammates to achieve daily goals.</p>
+                        <h5><span>For more details download my CV</span></h5>
+                        <button type="button"><a href="Resume.pdf" download="Resume">Download my CV</a></button>
+                    </div>
+                </div>
+         </section>
+         <section class="photos" id="photos">
+                <div class="photos-mains">
+                    <div class="photos-text">
+                        <h2>Photos</h2>
+                        <div class="slider1">
+                            <div class="slides1">
+                                <input type="radio" name="radio-btn" id="rd1">
+                                <input type="radio" name="radio-btn" id="rd2">
+                                <input type="radio" name="radio-btn" id="rd3">
+                                <input type="radio" name="radio-btn" id="rd4">
+                                <div class ="slide first">
+                                    <img src="h1.jpg">
+                                </div>
+                                <div class ="slide second">
+                                    <img src="h2.jpg">
+                                </div>
+                                <div class ="slide third">
+                                    <img src="h3.jpg">
+                                </div>
+                                <div class ="slide fourth">
+                                    <img src="h4.jpg">
+                                </div>
+                                <div class="navigation-auto1">
+                                    <div class="auto-btn1"></div>
+                                    <div class="auto-btn2"></div>
+                                    <div class="auto-btn3"></div>
+                                    <div class="auto-btn4"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+         </section>
+         <section class="contacts" id="contacts">
+                <div class="contacts-mains">
+                    <div class="contacts-text">
+                        <h2>Contacts details</h2>
+                        <h5>Home Address <span>- Mumbai</span></h5>
+                        <p>3/Anil niwas, M.P.Road, Gawanpada</br>Mulund East, Mumbai:400 081</p>
+                        <a href="tel:9870424789"><i class="fa-solid fa-phone"><span class="details">+919870424789</span></i></a></br>
+                        <a href="mailto:krushnaparab98@gmail.com"><i class="fa-solid fa-envelope"><span class="details">krushnaparab98@gmail.com</span></i></a>
+                    </div>
+                </div>
+         </section>
          <script type="text/javascript">
             var typed = new Typed(".input", {
                 strings:["Krishna(Harshal) Parab.", "Testing engineer." ,"Web developer." ,"Calisthenics trainer."],
@@ -78,7 +166,27 @@
             hamburger.addEventListener("click", function(){
                 this.classList.toggle("click");
                 navlist.classList.toggle("open");
-            });
+            })
+        </script>
+        <script type="text/javascript">
+            var counter =1;
+            setInterval(function(){
+                document.getElementById('radio' + counter).checked=true;
+                counter++;
+                if(counter >2){
+                    counter=1;
+                }
+            },5000);
+        </script>
+        <script type="text/javascript">
+            var counters =1;
+            setInterval(function(){
+                document.getElementById('rd' + counters).checked=true;
+                counters++;
+                if(counters >4){
+                    counters=1;
+                }
+            },5000);
         </script>
     </body>
 </html>
