@@ -145,6 +145,9 @@ nav .hamb span:nth-child(2){
         margin-left:0;
         margin-bottom:40px;
     }
+    nav .nav-list li.skip a{
+        display:none;
+    }
     nav .nav-list li.btn a{
         position:absolute;
         font-size: 14px;
